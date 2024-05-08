@@ -1,0 +1,10 @@
+version: '3'
+services:
+  server-chat:
+    container_name: server-chat
+    restart: always
+    ports:
+      - "5000:5000"
+    build:
+      context: .
+      dockerfile: server.Dockerfile
